@@ -46,7 +46,7 @@ function NavigationBar(): JSX.Element {
       <header className="fixed top-0 z-50 flex min-h-[5rem] min-w-full flex-wrap justify-between bg-green-800">
         <hgroup className="flex items-center justify-evenly gap-2">
           <button
-            className="flex place-content-center rounded-md bg-green-800 p-2 text-white hover:bg-green-900"
+            className="ml-2 flex place-content-center rounded-md bg-green-800 text-white hover:stroke-green-900"
             onClick={() => {
               setOpenMenu(!openMenu);
             }}
@@ -54,8 +54,8 @@ function NavigationBar(): JSX.Element {
             {openMenu ? <CloseIcon stroke="white" /> : <MenuIcon stroke="white" />}
           </button>
 
-          <Link className="text-4xl font-bold text-yellow-400" href="/">
-            Home
+          <Link className="text-6xl font-bold text-yellow-400" href="/">
+            HOME
           </Link>
         </hgroup>
         <nav className="flex  items-center justify-around gap-2 pr-5">
